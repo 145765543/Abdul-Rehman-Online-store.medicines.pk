@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Login Page with Mobile Phone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            perspective: 1000px;
+        }
+        .phone {
+            width: 350px;
+            height: 600px;
+            background: #000;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            transform: rotateX(10deg) rotateY(15deg);
+            transition: transform 0.5s ease;
+        }
+        .phone:hover {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        .screen {
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #6e8efb;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-container button:hover {
+            background: #5a7de0;
+        }
+        .apple-logo {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 20px;
+            transition: transform 0.3s ease; /* Smooth zoom effect */
+        }
+        .apple-logo:hover {
+            transform: scale(1.2); /* Zoom in by 20% */
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="screen">
+            <div class="login-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung Logo" class="apple-logo">
+                <h2>Login</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
